@@ -32,8 +32,8 @@
             <ul class="navlink-container">
                 <li class="lists"><a href="#" class="links navlinks navlink">New Item</a></li>
                 <li class="lists"><a href="#" class="links navlinks navlink">Browse</a></li>
-                <li class="lists"><a href="#" class="links navlinks teal-btn">Sign Up</a></li>
-                <li class="lists"><a href="#" class="links navlinks gray-btn">Log In</a></li>
+                <li class="lists"><a href="{% url 'core:signup' %}" class="links navlinks teal-btn">Sign Up</a></li>
+                <li class="lists"><a href="{% url 'core:login' %}" class="links navlinks gray-btn">Log In</a></li>
             </ul>
         </nav>
         {% block content %}
